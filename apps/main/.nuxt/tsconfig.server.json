@@ -1,0 +1,84 @@
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "allowSyntheticDefaultImports": true,
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "paths": {
+      "#imports": [
+        "./types/nitro-imports"
+      ],
+      "#paths": [
+        "../../../node_modules/.pnpm/nuxt@3.9.0_vite@5.0.10/node_modules/nuxt/dist/core/runtime/nitro/paths"
+      ],
+      "~": [
+        "./.."
+      ],
+      "~/*": [
+        "../*"
+      ],
+      "@": [
+        "./.."
+      ],
+      "@/*": [
+        "../*"
+      ],
+      "~~": [
+        "./.."
+      ],
+      "~~/*": [
+        "../*"
+      ],
+      "@@": [
+        "./.."
+      ],
+      "@@/*": [
+        "../*"
+      ],
+      "assets": [
+        "../assets"
+      ],
+      "assets/*": [
+        "../assets/*"
+      ],
+      "public": [
+        "../public"
+      ],
+      "public/*": [
+        "../public/*"
+      ],
+      "@typed-router": [
+        "./typed-router"
+      ],
+      "@typed-router/*": [
+        "./typed-router/*"
+      ],
+      "pinia": [
+        "../../../node_modules/.pnpm/pinia@2.1.7_vue@3.4.3/node_modules/pinia/dist/pinia"
+      ]
+    }
+  },
+  "include": [
+    "./types/nitro-nuxt.d.ts",
+    "../../../node_modules/.pnpm/nuxt-typed-router@3.5.0_prettier@3.1.1/node_modules/nuxt-typed-router/runtime/server",
+    "../../../node_modules/.pnpm/@nuxtjs+tailwindcss@6.10.3/node_modules/@nuxtjs/tailwindcss/runtime/server",
+    "../../../node_modules/.pnpm/@pinia+nuxt@0.5.1_vue@3.4.3/node_modules/@pinia/nuxt/runtime/server",
+    "../../../node_modules/.pnpm/@nuxt+devtools@1.0.6_nuxt@3.9.0_vite@5.0.10/node_modules/@nuxt/devtools/runtime/server",
+    "./types/nitro.d.ts",
+    "../**/*",
+    "../server/**/*"
+  ],
+  "exclude": [
+    "../node_modules",
+    "../../../node_modules",
+    "../../../node_modules/.pnpm/nuxt@3.9.0_vite@5.0.10/node_modules/nuxt/node_modules",
+    "../dist"
+  ]
+}

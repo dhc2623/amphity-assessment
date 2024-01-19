@@ -1,0 +1,25 @@
+{
+  "name": "@mono/root",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "turbo run dev --concurrency 20",
+    "build": "turbo run build",
+    "start": "turbo run start --concurrency 20",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "kill": "npkill"
+  },
+  "devDependencies": {
+    "npkill": "^0.11.3",
+    "turbo": "^1.11.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "pnpm@8.8.0",
+  "dependencies": {
+    "corepack": "^0.24.1",
+    "pnpm": "^8.14.1"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build", "postinstall"],
+      "outputs": ["dist/**", ".output/**"]
+    },
+    "postinstall": {
+      "outputs": []
+    },
+    "nuxt:prepare": {
+      "outputs": [".nuxt/**", "!__paths.d.ts"],
+      "dependsOn": ["^typecheck"]
+    },
+    "typecheck": {
+      "dependsOn": ["nuxt:prepare"],
+      "outputs": []
+    },
+    "lint": {
+      "dependsOn": ["nuxt:prepare"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "start": {
+      "cache": false,
+      "persistent": true
+    }
+  }
+}
